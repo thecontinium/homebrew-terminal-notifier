@@ -22,7 +22,7 @@ class TerminalNotifier < Formula
                "SYMROOT=build",
                "-verbose",
                "CODE_SIGN_IDENTITY="
-    bin.install "build/Release/terminal-notifier.app"
+    bin.install "build/Release/terminal-notifier"
   end
 
   test do
