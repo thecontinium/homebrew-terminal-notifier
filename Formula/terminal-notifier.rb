@@ -3,7 +3,7 @@ class TerminalNotifier < Formula
   homepage "https://github.com/julienXX/terminal-notifier"
   url "https://github.com/julienXX/terminal-notifier/archive/1.8.0.tar.gz"
   sha256 "390ae441156c1c621c56ccb3cffa670ba74ee60762bbcf12c92686b749bf232e"
-  head "https://github.com/julienXX/terminal-notifier.git", :tag => "1.8.0"
+  head "https://github.com/julienXX/terminal-notifier.git"
 
   bottle do
     cellar :any_skip_relocation
@@ -22,8 +22,7 @@ class TerminalNotifier < Formula
                "SYMROOT=build",
                "-verbose",
                "CODE_SIGN_IDENTITY="
-    prefix.install "build/Release/terminal-notifier.app"
-    bin.write_exec_script prefix/"terminal-notifier.app/Contents/MacOS/terminal-notifier"
+    bin.install "build/Release/terminal-notifier.app"
   end
 
   test do
