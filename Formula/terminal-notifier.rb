@@ -3,7 +3,7 @@ class TerminalNotifier < Formula
   homepage "https://github.com/julienXX/terminal-notifier"
   url "https://github.com/julienXX/terminal-notifier/archive/1.8.0.tar.gz"
   sha256 "390ae441156c1c621c56ccb3cffa670ba74ee60762bbcf12c92686b749bf232e"
-  head "https://github.com/julienXX/terminal-notifier.git"
+  head "https://github.com/julienXX/terminal-notifier.git", :tag => "1.8.0"
 
   bottle do
     cellar :any_skip_relocation
